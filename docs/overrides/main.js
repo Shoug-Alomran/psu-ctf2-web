@@ -1,46 +1,37 @@
 (() => {
+  const THEME_KEY = "acm-theme";
+  const LANG_KEY = "acm-lang";
+  const TARGET = new Date("2026-04-25T10:00:00");
+  const VALID_PAGES = new Set(["home", "schedule", "workshops", "resources", "challenges", "rules", "faq", "about"]);
+
   let lang = "en";
   let theme = "dark";
-  const TARGET = new Date("2026-04-25T10:00:00");
 
-  window.showPage = (id) => {
-    document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
+  const syncControlLabels = () => {
+    const langLabel = lang === "en" ? "AR" : "EN";
+    const themeLabel = theme === "dark" ? "☀" : "☾";
 
-    const target = document.getElementById(`page-${id}`);
-    if (target) {
-      target.classList.add("active");
-    }
-
-    document.querySelectorAll(".nav-links a").forEach((a) => {
-      a.classList.remove("active");
-      const key = a.getAttribute("data-en") || a.textContent || "";
-      if (key.toLowerCase().includes(id) || (id === "home" && key === "HOME")) {
-        a.classList.add("active");
-      }
+    document.querySelectorAll("#langBtn, [data-lang-toggle]").forEach((el) => {
+      el.textContent = langLabel;
     });
 
-    window.scrollTo(0, 0);
+    document.querySelectorAll("#themeBtn, [data-theme-toggle]").forEach((el) => {
+      el.textContent = themeLabel;
+    });
   };
 
-  window.toggleTheme = () => {
-    theme = theme === "dark" ? "light" : "dark";
+  const applyTheme = (nextTheme) => {
+    theme = nextTheme === "light" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", theme);
-    const btn = document.getElementById("themeBtn");
-    if (btn) {
-      btn.textContent = theme === "dark" ? "☀" : "☾";
-    }
+    window.localStorage.setItem(THEME_KEY, theme);
+    syncControlLabels();
   };
 
-  window.toggleLang = () => {
-    lang = lang === "en" ? "ar" : "en";
+  const applyLang = (nextLang) => {
+    lang = nextLang === "ar" ? "ar" : "en";
     const html = document.documentElement;
     html.setAttribute("lang", lang);
     html.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
-
-    const langBtn = document.getElementById("langBtn");
-    if (langBtn) {
-      langBtn.textContent = lang === "en" ? "AR" : "EN";
-    }
 
     document.querySelectorAll("[data-en]").forEach((el) => {
       const nextText = lang === "ar" ? el.getAttribute("data-ar") : el.getAttribute("data-en");
@@ -48,6 +39,61 @@
         el.textContent = nextText;
       }
     });
+
+    window.localStorage.setItem(LANG_KEY, lang);
+    syncControlLabels();
+  };
+
+  const ensureFloatingControls = () => {
+    if (document.getElementById("nav") || document.querySelector(".floating-site-controls")) {
+      return;
+    }
+
+    const controls = document.createElement("div");
+    controls.className = "floating-site-controls";
+    controls.innerHTML = `
+      <button class="floating-control-btn" type="button" data-lang-toggle aria-label="Toggle language"></button>
+      <button class="floating-control-btn" type="button" data-theme-toggle aria-label="Toggle theme"></button>
+    `;
+
+    controls.querySelector("[data-lang-toggle]")?.addEventListener("click", () => window.toggleLang());
+    controls.querySelector("[data-theme-toggle]")?.addEventListener("click", () => window.toggleTheme());
+    document.body.appendChild(controls);
+    syncControlLabels();
+  };
+
+  window.showPage = (id) => {
+    const nextId = VALID_PAGES.has(id) ? id : "home";
+
+    document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
+
+    const target = document.getElementById(`page-${nextId}`);
+    if (target) {
+      target.classList.add("active");
+    }
+
+    document.querySelectorAll(".nav-links a").forEach((a) => {
+      a.classList.remove("active");
+      const key = a.getAttribute("data-en") || a.textContent || "";
+      if (key.toLowerCase().includes(nextId) || (nextId === "home" && key === "HOME")) {
+        a.classList.add("active");
+      }
+    });
+
+    const nextHash = nextId === "home" ? "" : `#${nextId}`;
+    if (window.location.hash !== nextHash) {
+      window.history.replaceState(null, "", `${window.location.pathname}${nextHash}`);
+    }
+
+    window.scrollTo(0, 0);
+  };
+
+  window.toggleTheme = () => {
+    applyTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  window.toggleLang = () => {
+    applyLang(lang === "en" ? "ar" : "en");
   };
 
   window.toggleFaq = (el) => {
@@ -90,11 +136,24 @@
   };
 
   document.addEventListener("DOMContentLoaded", () => {
-    document.documentElement.setAttribute("data-theme", "dark");
-    document.documentElement.setAttribute("lang", "en");
-    document.documentElement.setAttribute("dir", "ltr");
+    ensureFloatingControls();
+
+    applyTheme(window.localStorage.getItem(THEME_KEY) || "dark");
+    applyLang(window.localStorage.getItem(LANG_KEY) || "en");
+
+    const hashPage = window.location.hash.replace(/^#/, "");
+    if (VALID_PAGES.has(hashPage)) {
+      window.showPage(hashPage);
+    } else {
+      window.showPage("home");
+    }
 
     updateCountdown();
     window.setInterval(updateCountdown, 1000);
+  });
+
+  window.addEventListener("hashchange", () => {
+    const hashPage = window.location.hash.replace(/^#/, "");
+    window.showPage(VALID_PAGES.has(hashPage) ? hashPage : "home");
   });
 })();

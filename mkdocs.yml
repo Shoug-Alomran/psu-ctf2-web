@@ -1,8 +1,10 @@
 site_name: ACM CTF 2.0
 site_description: Official website for ACM CTF 2.0 cybersecurity competition
-site_url: https://acmctf.psu.edu.sa/
+site_url: https://shoug-alomran.github.io/acm-ctf2-web/
 repo_url: https://github.com/Shoug-Alomran/acm-ctf2-web
 repo_name: acm-ctf2-web
+hooks:
+  - build_hooks.py
 
 theme:
   name: material
@@ -16,7 +18,6 @@ theme:
     text: Barlow
     code: Share Tech Mono
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.top
     - content.code.copy
@@ -31,7 +32,7 @@ nav:
   - Rules: rules.md
   - FAQ: faq.md
   - About: about.md
-  - Tutorial: tutorial.md
+  - Products: products.md
 
 markdown_extensions:
   - pymdownx.superfences

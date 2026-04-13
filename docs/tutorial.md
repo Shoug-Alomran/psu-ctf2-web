@@ -1,39 +1,15 @@
-# Workshop Tutorial
+<script>
+  window.location.replace("../#workshops");
+</script>
+<meta http-equiv="refresh" content="0; url=../#workshops">
 
-Use this page for your official workshop material. Replace this content with your final tutorial sections, code examples, labs, and exercises.
-
-## Starter Template
-
-Keep this page as your workshop tutorial destination. Edit with your own walkthrough, screenshots, and practical lab exercises.
-
-[Back to Workshop](workshop.md){: .md-button } [Open Resources](resources.md){: .md-button .md-button--primary }
-
----
-
-### Getting Started
-
-Add your workshop sections here. Use markdown headers to structure content:
-
-```markdown
-## Section Title
-
-### Subsection
-
-Your content here...
-```
-
-### Code Examples
-
-Inline code: `python ctf_solver.py`
-
-Block code:
-
-```python
-# Example CTF solver
-def solve_crypto_challenge(cipher):
-    return crack_cipher(cipher)
-```
-
-### Lab Exercises
-
-Create interactive lab instructions here and link to external resources as needed.
+<div class="tutorial-shell">
+  <section class="tutorial-open-card">
+    <p class="locale-en">The workshop tutorials are available on the main event page.</p>
+    <p class="locale-ar" lang="ar">تتوفر شروحات الورش داخل الصفحة الرئيسية للفعالية.</p>
+    <a href="../#workshops">
+      <span class="locale-en">Continue to the workshop section</span>
+      <span class="locale-ar" lang="ar">المتابعة إلى قسم الورش</span>
+    </a>
+  </section>
+</div>

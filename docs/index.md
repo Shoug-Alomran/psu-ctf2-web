@@ -167,7 +167,7 @@
           <div class="detail-group"><label data-en="ROOM" data-ar="القاعة">ROOM</label><span>C201</span></div>
           <div class="detail-group"><label data-en="INSTRUCTOR" data-ar="المدرب">INSTRUCTOR</label><span>Mohammed A.</span></div>
         </div>
-        <button class="view-btn" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</button>
+        <a class="view-btn" href="tutorial-osint/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
       <div class="workshop-card">
         <div class="workshop-header">
@@ -181,7 +181,7 @@
           <div class="detail-group"><label data-en="ROOM" data-ar="القاعة">ROOM</label><span>C201</span></div>
           <div class="detail-group"><label data-en="INSTRUCTOR" data-ar="المدرب">INSTRUCTOR</label><span>Sarah K.</span></div>
         </div>
-        <button class="view-btn" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</button>
+        <a class="view-btn" href="tutorial-web/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
       <div class="workshop-card">
         <div class="workshop-header">
@@ -195,7 +195,7 @@
           <div class="detail-group"><label data-en="ROOM" data-ar="القاعة">ROOM</label><span>C201</span></div>
           <div class="detail-group"><label data-en="INSTRUCTOR" data-ar="المدرب">INSTRUCTOR</label><span>Dr. Youssef</span></div>
         </div>
-        <button class="view-btn" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</button>
+        <a class="view-btn" href="tutorial-crypto/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
       <div class="workshop-card">
         <div class="workshop-header">
@@ -209,7 +209,7 @@
           <div class="detail-group"><label data-en="ROOM" data-ar="القاعة">ROOM</label><span>C201</span></div>
           <div class="detail-group"><label data-en="INSTRUCTOR" data-ar="المدرب">INSTRUCTOR</label><span>Dr. Youssef</span></div>
         </div>
-        <button class="view-btn" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</button>
+        <a class="view-btn" href="tutorial-forensics/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
     </div>
   </div>
@@ -241,20 +241,20 @@
     <h2 class="section-title" data-en="LEARNING RESOURCES" data-ar="موارد التعلم">LEARNING RESOURCES</h2>
     <div class="resource-section">
       <div class="resource-cat" data-en="Web Security" data-ar="أمن الويب">Web Security</div>
-      <div class="resource-item"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">Burp Suite Community Edition</span><span class="resource-ext">↗</span></div>
-      <div class="resource-item"><span class="resource-badge badge-yt">YT</span><span class="resource-name">OWASP Top 10 Explained</span><span class="resource-ext">↗</span></div>
-      <div class="resource-item"><span class="resource-badge badge-platform">PLATFORM</span><span class="resource-name">PortSwigger Web Security Academy</span><span class="resource-ext">↗</span></div>
+      <a class="resource-item" href="https://portswigger.net/burp/communitydownload" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">Burp Suite Community Edition</span><span class="resource-ext">↗</span></a>
+      <a class="resource-item" href="https://www.youtube.com/watch?v=7f2vl3sQK2M" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-yt">YT</span><span class="resource-name">OWASP Top 10 Explained</span><span class="resource-ext">↗</span></a>
+      <a class="resource-item" href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-platform">PLATFORM</span><span class="resource-name">PortSwigger Web Security Academy</span><span class="resource-ext">↗</span></a>
     </div>
     <div class="resource-section">
       <div class="resource-cat" data-en="Cryptography" data-ar="التشفير">Cryptography</div>
-      <div class="resource-item"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">CyberChef</span><span class="resource-ext">↗</span></div>
-      <div class="resource-item"><span class="resource-badge badge-article">ARTICLE</span><span class="resource-name">Introduction to RSA Encryption</span><span class="resource-ext">↗</span></div>
+      <a class="resource-item" href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">CyberChef</span><span class="resource-ext">↗</span></a>
+      <a class="resource-item" href="https://ctf101.org/cryptography/what-is-rsa/" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-article">ARTICLE</span><span class="resource-name">Introduction to RSA Encryption</span><span class="resource-ext">↗</span></a>
     </div>
     <div class="resource-section">
       <div class="resource-cat" data-en="Forensics &amp; OSINT" data-ar="التحقيق الجنائي والـ OSINT">Forensics &amp; OSINT</div>
-      <div class="resource-item"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">Wireshark</span><span class="resource-ext">↗</span></div>
-      <div class="resource-item"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">Autopsy Digital Forensics</span><span class="resource-ext">↗</span></div>
-      <div class="resource-item"><span class="resource-badge badge-platform">PLATFORM</span><span class="resource-name">Maltego Community Edition</span><span class="resource-ext">↗</span></div>
+      <a class="resource-item" href="https://www.wireshark.org/" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">Wireshark</span><span class="resource-ext">↗</span></a>
+      <a class="resource-item" href="https://www.autopsy.com/download/" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-tool">TOOL</span><span class="resource-name">Autopsy Digital Forensics</span><span class="resource-ext">↗</span></a>
+      <a class="resource-item" href="https://www.maltego.com/downloads/" target="_blank" rel="noopener noreferrer"><span class="resource-badge badge-platform">PLATFORM</span><span class="resource-name">Maltego Community Edition</span><span class="resource-ext">↗</span></a>
     </div>
   </div>
   <footer class="site-footer">
@@ -425,7 +425,7 @@
     <div class="team-grid">
       <div class="team-member"><div class="team-avatar">SA</div><div class="team-name">Shoug Alomran</div><div class="team-role" data-en="Liaison and Website Developer" data-ar="مسؤول الاتصال ومطور مواقع الويب">Liaison and Website Developer</div></div>
       <div class="team-member"><div class="team-avatar">SA</div><div class="team-name">Sultan Alharbi</div><div class="team-role" data-en="T" data-ar="ق">T</div></div>
-      <div class="team-member"><div class="team-avatar">Y</div><div class="team-name">Yawar</div><div class="team-role" data-en="Challenge Developer" data-ar="مطور التحديات">T</div></div>
+      <div class="team-member"><div class="team-avatar">Y</div><div class="team-name">Yawar</div><div class="team-role" data-en="T" data-ar="مطور التحديات">T</div></div>
       <div class="team-member"><div class="team-avatar">NA</div><div class="team-name">T</div><div class="team-role" data-en="T" data-ar="ا">T</div></div>
     </div>
   </div>

@@ -1,8 +1,12 @@
-# Rules
+# Rules / القوانين
 
 All participants are expected to follow these rules and university conduct standards throughout the event.
 
-## Competition Rules
+<div dir="rtl" lang="ar">
+يُتوقع من جميع المشاركين الالتزام بهذه القوانين وبمعايير السلوك الجامعي طوال الفعالية.
+</div>
+
+## Competition Rules / قوانين المسابقة
 
 1. **No attacks against competition infrastructure.** Target only official challenge instances.
 
@@ -15,3 +19,14 @@ All participants are expected to follow these rules and university conduct stand
 5. **Any behavior violating ethics or university policy** may lead to immediate disqualification.
 
 6. **Respect event staff decisions** regarding scoring, tie-breakers, and challenge clarifications.
+
+<div dir="rtl" lang="ar">
+<ol>
+  <li><strong>يُمنع مهاجمة بنية المسابقة التحتية</strong>، ويُسمح فقط بالتعامل مع الأنظمة الرسمية الخاصة بالتحديات.</li>
+  <li><strong>يُمنع تبادل الأعلام أو البيانات أو الحلول النهائية</strong> بين الفرق أثناء المسابقة.</li>
+  <li><strong>هجمات القوة الغاشمة على الأنظمة الخارجية ممنوعة</strong> ما لم يُذكر غير ذلك صراحة في وصف التحدي.</li>
+  <li><strong>يجب على كل مشارك استخدام هويته المسجلة فقط</strong> والحساب المخصص لفريقه.</li>
+  <li><strong>أي سلوك يخالف الأخلاقيات أو أنظمة الجامعة</strong> قد يؤدي إلى الاستبعاد الفوري.</li>
+  <li><strong>يجب احترام قرارات فريق التنظيم</strong> فيما يتعلق بالنقاط وكسر التعادل وتوضيحات التحديات.</li>
+</ol>
+</div>
