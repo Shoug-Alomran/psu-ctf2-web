@@ -1,6 +1,6 @@
 site_name: ACM CTF 2.0
 site_description: Official website for ACM CTF 2.0 cybersecurity competition
-site_url: https://shoug-alomran.github.io/acm-ctf2-web/
+site_url: https://psu-acm.shoug-tech.com/
 repo_url: https://github.com/Shoug-Alomran/acm-ctf2-web
 repo_name: acm-ctf2-web
 hooks:
