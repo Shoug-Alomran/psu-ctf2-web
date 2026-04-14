@@ -1521,6 +1521,46 @@ html[dir="rtl"] .nav-controls {
   .workshop-grid {
     grid-template-columns: 1fr;
   }
+
+  html[data-theme="light"] nav#nav {
+    background: rgba(249, 252, 255, 0.96);
+    border-bottom-color: rgba(26, 111, 216, 0.16);
+    box-shadow: 0 12px 28px rgba(26, 111, 216, 0.08);
+  }
+
+  html[data-theme="light"] .lang-btn,
+  html[data-theme="light"] .theme-btn {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(236, 242, 250, 0.98));
+    border-color: rgba(26, 111, 216, 0.28);
+    color: #17325f;
+    box-shadow: 0 8px 20px rgba(26, 111, 216, 0.14);
+  }
+
+  html[data-theme="light"] .lang-btn:hover,
+  html[data-theme="light"] .theme-btn:hover {
+    color: #0d4a99;
+    border-color: #1a6fd8;
+    background: linear-gradient(180deg, rgba(239, 247, 255, 0.98), rgba(225, 238, 255, 0.98));
+  }
+
+  html[data-theme="light"] .nav-links a {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(240, 245, 252, 0.98));
+    border-color: rgba(26, 111, 216, 0.2);
+    color: #355070;
+    box-shadow: 0 6px 16px rgba(26, 111, 216, 0.08);
+  }
+
+  html[data-theme="light"] .nav-links a:hover {
+    color: #0d4a99;
+    border-color: #1a6fd8;
+  }
+
+  html[data-theme="light"] .nav-links a.active {
+    color: #0d4a99;
+    border-color: #1a6fd8;
+    background: linear-gradient(180deg, rgba(225, 238, 255, 1), rgba(213, 230, 255, 0.98));
+    box-shadow: 0 8px 20px rgba(26, 111, 216, 0.14);
+  }
 }
 
 @media (max-width: 720px) {
