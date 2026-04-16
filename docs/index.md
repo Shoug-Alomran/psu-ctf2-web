@@ -419,14 +419,14 @@
           <span data-en="Is it a team or individual competition?" data-ar="هل المسابقة فردية أم جماعية؟">Is it a team or individual competition?</span>
           <em class="faq-chevron">∨</em>
         </div>
-        <div class="faq-a" data-en="You can compete as an individual or in a team of up to 4 members." data-ar="يمكنك المنافسة بشكل فردي أو ضمن فريق من 4 أعضاء كحد أقصى.">You can compete as an individual or in a team of up to 4 members.</div>
+        <div class="faq-a" data-en="You may participate in teams of two or three members." data-ar="تقدر تشارك ضمن فريق مكون من عضوين إلى ثلاثةأعضاء.">You may participate in teams of two or three members.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
           <span data-en="What should I bring?" data-ar="ماذا يجب أن أحضر؟">What should I bring?</span>
           <em class="faq-chevron">∨</em>
         </div>
-        <div class="faq-a" data-en="Your laptop, a charger, and your university ID. We'll provide WiFi and everything else you need." data-ar="حاسوبك المحمول وشاحنه وبطاقتك الجامعية. سنوفر الإنترنت وكل ما تحتاجه.">Your laptop, a charger, and your university ID. We'll provide WiFi and everything else you need.</div>
+        <div class="faq-a" data-en="Please bring your laptop, charger, and university ID. WiFi will not be provided, so you’ll need to use a personal hotspot; if you don’t have one, a club member will assist you." data-ar="جيب معك اللابتوب، الشاحن، والبطاقة الجامعية. ما راح يتوفر واي فاي، فبتحتاج تستخدم نقطة اتصال (هوتسبوت) من جوالك، وإذا ما عندك، أحد من أعضاء النادي بيساعدك فيها.">Please bring your laptop, charger, and university ID. WiFi will not be provided, so you’ll need to use a personal hotspot; if you don’t have one, a club member will assist you.</div>
       </div>
     </div>
     <div class="faq-contact">
