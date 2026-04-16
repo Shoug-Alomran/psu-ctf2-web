@@ -67,3 +67,4 @@ ACM CTF 2.0 is a collaborative effort between two student communities: the ACM C
 | **YH** | Yawar Hayat `ACM Club` | ACM President / رئيس نادي ACM |
 | **TA** | Turki Alhussain `Cyber-Tech Club` | Challenge Designer / مصمم التحديات |
 | **FA** | Faisal Aldabesh `Cyber-Tech Club` | Workshop Writer / كاتب محتوى الورش |
+| **GA** | Ghaida Aldriweesh `Cyber-Tech Club` | Workshop Writer / كاتب محتوى الورش |

@@ -530,6 +530,13 @@
         <div class="team-role" data-en="Workshop Writer" data-ar="كاتب محتوى الورش">Workshop Writer</div>
       </div>
     </div>
+     <div class="team-member">
+        <div class="team-avatar">GA</div>
+        <div class="team-name">Ghaida Aldriweesh</div>
+        <div class="team-tag" data-en="Cyber-Tech Club" data-ar="نادي Cyber-Tech">Cyber-Tech Club</div>
+        <div class="team-role" data-en="Workshop Writer" data-ar="كاتب محتوى الورش">Workshop Writer</div>
+      </div>
+    </div>
   </div>
   <footer class="site-footer">
     <div class="footer-logo">ACM/Cyber-Tech CTF <span>2.0</span></div>
