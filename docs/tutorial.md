@@ -6,7 +6,7 @@
     </span>
     <h1 class="tutorial-title">
       <span class="locale-en">API Exploitation &amp; File Attacks</span>
-      <span class="locale-ar" lang="ar">استغلال الواجهات البرمجية وهجمات الملفات</span>
+      <span class="locale-ar" lang="ar">استغلال واجهات البرمجة وهجمات الملفات</span>
     </h1>
     <p class="tutorial-summary locale-en">Day 5 of the CTF Workshop 5-day program.</p>
     <p class="tutorial-summary locale-ar" lang="ar">اليوم الخامس من برنامج ورشة CTF المكوّن من خمسة أيام.</p>
@@ -16,19 +16,13 @@
         <strong class="locale-en">Theme:</strong>
         <strong class="locale-ar" lang="ar">المحور:</strong>
         <span class="locale-en">Going deeper with APIs and server-side flaws</span>
-        <span class="locale-ar" lang="ar">التعمق في الواجهات البرمجية والثغرات من جهة الخادم</span>
+        <span class="locale-ar" lang="ar">التعمق في واجهات البرمجة وثغرات جانب الخادم</span>
       </div>
       <div class="tutorial-meta-item">
-        <strong class="locale-en">Date:</strong>
-        <strong class="locale-ar" lang="ar">التاريخ:</strong>
-        <span class="locale-en">Apr 23</span>
-        <span class="locale-ar" lang="ar">23 أبريل</span>
-      </div>
-      <div class="tutorial-meta-item">
-        <strong class="locale-en">Time:</strong>
-        <strong class="locale-ar" lang="ar">الوقت:</strong>
-        <span class="locale-en">TBD</span>
-        <span class="locale-ar" lang="ar">يحدد لاحقًا</span>
+        <strong class="locale-en">Author:</strong>
+        <strong class="locale-ar" lang="ar">إعداد:</strong>
+        <span class="locale-en">Sultan Alharbi</span>
+        <span class="locale-ar" lang="ar">سلطان الحربي</span>
       </div>
     </div>
 
@@ -47,39 +41,50 @@
       <li class="locale-en">API Exploitation</li>
       <li class="locale-en">File Inclusion (LFI/RFI)</li>
       <li class="locale-ar" lang="ar">ثغرات رفع الملفات</li>
-      <li class="locale-ar" lang="ar">استغلال الواجهات البرمجية</li>
-      <li class="locale-ar" lang="ar">تضمين الملفات LFI/RFI</li>
+      <li class="locale-ar" lang="ar">استغلال واجهات البرمجة</li>
+      <li class="locale-ar" lang="ar">تضمين الملفات</li>
     </ul>
 
     <h2><span class="locale-en">Objectives</span><span class="locale-ar" lang="ar">الأهداف</span></h2>
     <ul>
       <li class="locale-en">Enumerate and fuzz API endpoints.</li>
       <li class="locale-en">Exploit LFI/RFI to access sensitive files or achieve RCE.</li>
-      <li class="locale-ar" lang="ar">حصر نقاط API واختبارها بأساليب الفحص الآلي.</li>
-      <li class="locale-ar" lang="ar">استغلال LFI/RFI للوصول إلى ملفات حساسة أو تحقيق تنفيذ أوامر عن بُعد.</li>
+      <li class="locale-ar" lang="ar">استكشاف واختبار نقاط نهاية الـ API (Enumerate &amp; Fuzz).</li>
+      <li class="locale-ar" lang="ar">استغلال ثغرات LFI / RFI للوصول إلى ملفات حساسة أو تنفيذ أوامر عن بُعد (RCE).</li>
     </ul>
 
     <h2><span class="locale-en">Workshop Activity</span><span class="locale-ar" lang="ar">نشاط الورشة</span></h2>
     <ul>
       <li class="locale-en">Find and exploit an API vulnerability in a challenge.</li>
       <li class="locale-en">Perform an LFI exploit to read a local file.</li>
-      <li class="locale-ar" lang="ar">العثور على ثغرة في API داخل أحد التحديات واستغلالها.</li>
+      <li class="locale-ar" lang="ar">العثور على ثغرة في API واستغلالها ضمن التحدي.</li>
       <li class="locale-ar" lang="ar">تنفيذ استغلال LFI لقراءة ملف محلي.</li>
     </ul>
 
     <h2><span class="locale-en">Closing Session</span><span class="locale-ar" lang="ar">الجلسة الختامية</span></h2>
     <ul>
       <li class="locale-en">Capture-the-Flag mini-event covering all topics.</li>
-      <li class="locale-ar" lang="ar">فعالية CTF مصغرة تغطي جميع الموضوعات.</li>
+      <li class="locale-ar" lang="ar">فعالية مصغّرة تشمل جميع الموضوعات السابقة.</li>
     </ul>
   </section>
 
   <section class="tutorial-open-card">
-    <p class="locale-en">If the embedded version does not load properly, open the HTML placeholder directly in a separate tab.</p>
-    <p class="locale-ar" lang="ar">إذا لم يتم تحميل النسخة المضمنة بشكل صحيح، يمكن فتح نموذج HTML مباشرة في علامة تبويب مستقلة.</p>
+    <h2><span class="locale-en">Recommended Tutorial</span><span class="locale-ar" lang="ar">الشرح المقترح</span></h2>
+    <p class="locale-en">Use this PortSwigger lab to practice file upload exploitation leading to remote code execution.</p>
+    <p class="locale-ar" lang="ar">استخدم هذا المختبر من PortSwigger للتدرّب على استغلال رفع الملفات المؤدي إلى تنفيذ أوامر عن بُعد.</p>
+    <a href="https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload" target="_blank" rel="noopener noreferrer">
+      <span class="locale-en">Open the file upload lab</span>
+      <span class="locale-ar" lang="ar">فتح مختبر رفع الملفات</span>
+    </a>
+  </section>
+
+  <section class="tutorial-open-card">
+    <h2><span class="locale-en">Workshop HTML Content</span><span class="locale-ar" lang="ar">محتوى الورشة HTML</span></h2>
+    <p class="locale-en">Open the HTML workshop content or preview it below.</p>
+    <p class="locale-ar" lang="ar">يمكنك فتح محتوى الورشة بصيغة HTML أو معاينته بالأسفل.</p>
     <a href="../assets/tutorials/api.html" target="_blank" rel="noopener noreferrer">
-      <span class="locale-en">Open the Day 5 HTML placeholder in a new tab</span>
-      <span class="locale-ar" lang="ar">فتح نموذج HTML لليوم الخامس في تبويب جديد</span>
+      <span class="locale-en">Open the Day 5 HTML content</span>
+      <span class="locale-ar" lang="ar">فتح محتوى HTML لليوم الخامس</span>
     </a>
   </section>
 </div>

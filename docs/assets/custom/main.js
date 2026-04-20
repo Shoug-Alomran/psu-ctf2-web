@@ -75,7 +75,11 @@
     document.querySelectorAll(".nav-links a").forEach((a) => {
       a.classList.remove("active");
       const key = a.getAttribute("data-en") || a.textContent || "";
-      if (key.toLowerCase().includes(nextId) || (nextId === "home" && key === "HOME")) {
+      if (
+        key.toLowerCase().includes(nextId) ||
+        (nextId === "schedule" && key.toLowerCase().includes("agenda")) ||
+        (nextId === "home" && key === "HOME")
+      ) {
         a.classList.add("active");
       }
     });

@@ -25,7 +25,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Schedule: schedule.md
+  - Agenda: schedule.md
   - Workshop: workshop.md
   - Resources: resources.md
   - Challenges: challenges.md

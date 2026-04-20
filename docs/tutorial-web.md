@@ -19,16 +19,10 @@
         <span class="locale-ar" lang="ar">اختراق أنظمة المصادقة والتفويض الضعيفة</span>
       </div>
       <div class="tutorial-meta-item">
-        <strong class="locale-en">Date:</strong>
-        <strong class="locale-ar" lang="ar">التاريخ:</strong>
-        <span class="locale-en">Apr 20</span>
-        <span class="locale-ar" lang="ar">20 أبريل</span>
-      </div>
-      <div class="tutorial-meta-item">
-        <strong class="locale-en">Time:</strong>
-        <strong class="locale-ar" lang="ar">الوقت:</strong>
-        <span class="locale-en">TBD</span>
-        <span class="locale-ar" lang="ar">يحدد لاحقًا</span>
+        <strong class="locale-en">Author:</strong>
+        <strong class="locale-ar" lang="ar">إعداد:</strong>
+        <span class="locale-en">Shoug Alomran</span>
+        <span class="locale-ar" lang="ar">شوق العمران</span>
       </div>
     </div>
 
@@ -48,7 +42,7 @@
       <li class="locale-en">Privilege Escalation / Bypasses</li>
       <li class="locale-ar" lang="ar">إدارة الجلسات</li>
       <li class="locale-ar" lang="ar">التحكم في الوصول</li>
-      <li class="locale-ar" lang="ar">تصعيد الصلاحيات وتجاوز الحمايات</li>
+      <li class="locale-ar" lang="ar">تصعيد الصلاحيات / تجاوز القيود</li>
     </ul>
 
     <h2><span class="locale-en">Objectives</span><span class="locale-ar" lang="ar">الأهداف</span></h2>
@@ -56,24 +50,35 @@
       <li class="locale-en">Understand broken authentication and session flaws.</li>
       <li class="locale-en">Spot insecure cookie handling and session fixation.</li>
       <li class="locale-en">Exploit broken access control to escalate privileges.</li>
-      <li class="locale-ar" lang="ar">فهم ثغرات المصادقة المكسورة ومشكلات الجلسات.</li>
-      <li class="locale-ar" lang="ar">اكتشاف التعامل غير الآمن مع ملفات تعريف الارتباط وتثبيت الجلسات.</li>
+      <li class="locale-ar" lang="ar">فهم أخطاء المصادقة وإدارة الجلسات.</li>
+      <li class="locale-ar" lang="ar">اكتشاف التعامل غير الآمن مع ملفات تعريف الارتباط وهجمات تثبيت الجلسة.</li>
       <li class="locale-ar" lang="ar">استغلال ضعف التحكم في الوصول لتصعيد الصلاحيات.</li>
     </ul>
 
     <h2><span class="locale-en">Workshop Activity</span><span class="locale-ar" lang="ar">نشاط الورشة</span></h2>
     <ul>
       <li class="locale-en">Perform an IDOR or parameter tampering attack in a CTF lab.</li>
-      <li class="locale-ar" lang="ar">تنفيذ هجوم IDOR أو العبث بالمعاملات داخل مختبر CTF.</li>
+      <li class="locale-ar" lang="ar">تنفيذ هجوم IDOR (الوصول المباشر غير الآمن إلى الكائنات) أو التلاعب بالمعاملات (Parameter Tampering) ضمن مختبر CTF (التقاط العلم).</li>
     </ul>
   </section>
 
   <section class="tutorial-open-card">
-    <p class="locale-en">If the embedded version does not load properly, open the HTML placeholder directly in a separate tab.</p>
-    <p class="locale-ar" lang="ar">إذا لم يتم تحميل النسخة المضمنة بشكل صحيح، يمكن فتح نموذج HTML مباشرة في علامة تبويب مستقلة.</p>
+    <h2><span class="locale-en">Recommended Tutorial</span><span class="locale-ar" lang="ar">الشرح المقترح</span></h2>
+    <p class="locale-en">Use this PortSwigger lab to practice unprotected admin functionality and access-control bypasses.</p>
+    <p class="locale-ar" lang="ar">استخدم هذا المختبر من PortSwigger للتدرّب على وظائف الإدارة غير المحمية وتجاوز التحكم في الوصول.</p>
+    <a href="https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality" target="_blank" rel="noopener noreferrer">
+      <span class="locale-en">Open the access control lab</span>
+      <span class="locale-ar" lang="ar">فتح مختبر التحكم في الوصول</span>
+    </a>
+  </section>
+
+  <section class="tutorial-open-card">
+    <h2><span class="locale-en">Workshop HTML Content</span><span class="locale-ar" lang="ar">محتوى الورشة HTML</span></h2>
+    <p class="locale-en">Open the HTML workshop content or preview it below.</p>
+    <p class="locale-ar" lang="ar">يمكنك فتح محتوى الورشة بصيغة HTML أو معاينته بالأسفل.</p>
     <a href="../assets/tutorials/web.html" target="_blank" rel="noopener noreferrer">
-      <span class="locale-en">Open the Day 2 HTML placeholder in a new tab</span>
-      <span class="locale-ar" lang="ar">فتح نموذج HTML لليوم الثاني في تبويب جديد</span>
+      <span class="locale-en">Open the Day 2 HTML content</span>
+      <span class="locale-ar" lang="ar">فتح محتوى HTML لليوم الثاني</span>
     </a>
   </section>
 </div>

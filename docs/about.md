@@ -40,6 +40,7 @@ ACM CTF 2.0 is a collaborative effort between two student communities: the ACM C
         <li data-en="Organized the event from end to end and created the cryptography challenges." data-ar="تولى تنظيم الفعالية بالكامل، وأنشأ تحديات التشفير.">Organized the event from end to end and created the cryptography challenges.</li>
         <li data-en="Funded the prizes for the competition." data-ar="تكفل بتمويل جوائز المسابقة.">Funded the prizes for the competition.</li>
         <li data-en="Handled approvals, professor coordination, and the event website." data-ar="أنجز الموافقات الرسمية، ونسق مع الأساتذة المشاركين، وطوّر موقع الفعالية.">Handled approvals, professor coordination, and the event website.</li>
+        <li data-en="Partnered with Cyber-Tech to populate the workshop tutorial templates." data-ar="تعاون مع نادي سايبر-تك في تعبئة قوالب شروحات ورش العمل.">Partnered with Cyber-Tech to populate the workshop tutorial templates.</li>
       </ul>
     </div>
 
@@ -47,8 +48,9 @@ ACM CTF 2.0 is a collaborative effort between two student communities: the ACM C
       <div class="club-work-title" data-en="Cyber-Tech Club" data-ar="نادي سايبر-تك">Cyber-Tech Club</div>
       <ul class="club-work-list">
         <li data-en="Designed the challenges." data-ar="صمّم التحديات.">Designed the challenges.</li>
-        <li data-en="Wrote the workshop content." data-ar="أعدّ محتوى الورش.">Wrote the workshop content.</li>
-        <li data-en="Facilitated the workshops." data-ar="قدّم الورش وسهّل تنفيذها.">Facilitated the workshops.</li>
+        <li data-en="Created the workshop tutorial template and wrote the workshop content." data-ar="أنشأ قالب شروحات ورش العمل وأعدّ محتوى الورش.">Created the workshop tutorial template and wrote the workshop content.</li>
+        <li data-en="Worked with ACM to populate the workshop tutorial templates." data-ar="عمل مع نادي ACM على تعبئة قوالب شروحات ورش العمل.">Worked with ACM to populate the workshop tutorial templates.</li>
+        <li data-en="Converted the workshop material into presentation slides and facilitated the workshops." data-ar="حوّل محتوى الورش إلى شرائح عرض وقدّم الورش وسهّل تنفيذها.">Converted the workshop material into presentation slides and facilitated the workshops.</li>
       </ul>
     </div>
   </div>
@@ -60,11 +62,41 @@ ACM CTF 2.0 is a collaborative effort between two student communities: the ACM C
 
 ## Organizing Team / فريق التنظيم
 
-| Role | Name | Title |
-|------|------|-------|
-| **SA** | Shoug Alomran `ACM Club` | Liaison and Website Developer / مسؤول الاتصال ومطور الموقع |
-| **SA** | Sultan Alharbi `Cyber-Tech Club` | Cyber Tech President / رئيس نادي Cyber-Tech |
-| **YH** | Yawar Hayat `ACM Club` | ACM President / رئيس نادي ACM |
-| **TA** | Turki Alhussain `Cyber-Tech Club` | Challenge Designer / مصمم التحديات |
-| **FA** | Faisal Aldabesh `Cyber-Tech Club` | Workshop Writer / كاتب محتوى الورش |
-| **GA** | Ghaida Aldriweesh `Cyber-Tech Club` | Workshop Writer / كاتب محتوى الورش |
+<div class="team-grid">
+  <div class="team-member">
+    <div class="team-avatar">SA</div>
+    <div class="team-name">Shoug Alomran</div>
+    <div class="team-tag" data-en="ACM Club" data-ar="نادي ACM">ACM Club</div>
+    <div class="team-role" data-en="Liaison and Website Developer" data-ar="مسؤول الاتصال ومطور الموقع">Liaison and Website Developer</div>
+  </div>
+  <div class="team-member">
+    <div class="team-avatar">SA</div>
+    <div class="team-name">Sultan Alharbi</div>
+    <div class="team-tag" data-en="Cyber-Tech Club" data-ar="نادي Cyber-Tech">Cyber-Tech Club</div>
+    <div class="team-role" data-en="Cyber Tech President" data-ar="رئيس نادي Cyber-Tech">Cyber Tech President</div>
+  </div>
+  <div class="team-member">
+    <div class="team-avatar">YH</div>
+    <div class="team-name">Yawar Hayat</div>
+    <div class="team-tag" data-en="ACM Club" data-ar="نادي ACM">ACM Club</div>
+    <div class="team-role" data-en="ACM President" data-ar="رئيس نادي ACM">ACM President</div>
+  </div>
+  <div class="team-member">
+    <div class="team-avatar">TA</div>
+    <div class="team-name">Turki Alhussain</div>
+    <div class="team-tag" data-en="Cyber-Tech Club" data-ar="نادي Cyber-Tech">Cyber-Tech Club</div>
+    <div class="team-role" data-en="Challenge Designer" data-ar="مصمم التحديات">Challenge Designer</div>
+  </div>
+  <div class="team-member">
+    <div class="team-avatar">FA</div>
+    <div class="team-name">Faisal Aldabesh</div>
+    <div class="team-tag" data-en="Cyber-Tech Club" data-ar="نادي Cyber-Tech">Cyber-Tech Club</div>
+    <div class="team-role" data-en="Workshop Writer" data-ar="كاتب محتوى الورش">Workshop Writer</div>
+  </div>
+  <div class="team-member">
+    <div class="team-avatar">GA</div>
+    <div class="team-name">Ghaida Aldriweesh</div>
+    <div class="team-tag" data-en="Cyber-Tech Club" data-ar="نادي Cyber-Tech">Cyber-Tech Club</div>
+    <div class="team-role" data-en="Workshop Writer" data-ar="كاتب محتوى الورش">Workshop Writer</div>
+  </div>
+</div>

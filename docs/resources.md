@@ -45,16 +45,16 @@ Readable walkthrough on factorization and weak exponent mistakes.
 
 ## Web Security / أمن الويب
 
-### PortSwigger Web Security Academy
+### PortSwigger Access Control
 <span class="chip">PLATFORM</span>
 
-Hands-on labs for SQLi, XSS, auth flaws, and request tampering.
+Hands-on labs for broken access control, privilege bypasses, and IDOR-style issues.
 
 <div dir="rtl" lang="ar">
-مختبرات عملية لتعلم SQLi وXSS وثغرات المصادقة والتعامل مع الطلبات.
+مختبرات عملية لتعلم ضعف التحكم في الوصول وتجاوز الصلاحيات ومشكلات IDOR.
 </div>
 
-[View Resource](https://portswigger.net/web-security){: target="_blank" rel="noopener noreferrer" }
+[View Resource](https://portswigger.net/web-security/access-control){: target="_blank" rel="noopener noreferrer" }
 
 ### Burp Suite Community Edition
 <span class="chip">TOOL</span>
@@ -67,16 +67,60 @@ Inspect and modify HTTP traffic during web challenge analysis.
 
 [View Resource](https://portswigger.net/burp/communitydownload){: target="_blank" rel="noopener noreferrer" }
 
-### OWASP Top 10 Explained
-<span class="chip">VIDEO</span>
+### PortSwigger Authentication
+<span class="chip">PLATFORM</span>
 
-Quick overview of modern web attack surfaces and secure patterns.
+Labs and explainers for login flaws, session issues, and weak authentication flows.
 
 <div dir="rtl" lang="ar">
-نظرة سريعة على أسطح الهجوم الحديثة في الويب وأفضل ممارسات الحماية.
+مختبرات وشروحات لثغرات تسجيل الدخول ومشكلات الجلسات وضعف أنظمة المصادقة.
 </div>
 
-[View Resource](https://www.youtube.com/watch?v=7f2vl3sQK2M){: target="_blank" rel="noopener noreferrer" }
+[View Resource](https://portswigger.net/web-security/authentication){: target="_blank" rel="noopener noreferrer" }
+
+### OWASP Broken Access Control
+<span class="chip">REFERENCE</span>
+
+Overview of one of the most common web risks and the impact of missing authorization checks.
+
+<div dir="rtl" lang="ar">
+نظرة عامة على واحدة من أكثر ثغرات الويب شيوعًا وتأثير غياب التحقق من الصلاحيات.
+</div>
+
+[View Resource](https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/index.html){: target="_blank" rel="noopener noreferrer" }
+
+### OWASP Authentication Cheat Sheet
+<span class="chip">GUIDE</span>
+
+Implementation guidance for secure login, password handling, and session-related controls.
+
+<div dir="rtl" lang="ar">
+إرشادات عملية لبناء تسجيل دخول آمن، والتعامل مع كلمات المرور، وضوابط الجلسات.
+</div>
+
+[View Resource](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html){: target="_blank" rel="noopener noreferrer" }
+
+### SQL Injection Login Bypass Lab
+<span class="chip">LAB</span>
+
+Short practical lab for learning SQL injection against a login form.
+
+<div dir="rtl" lang="ar">
+مختبر عملي قصير لتعلم SQL Injection ضد صفحة تسجيل الدخول.
+</div>
+
+[View Resource](https://portswigger.net/web-security/sql-injection/lab-login-bypass){: target="_blank" rel="noopener noreferrer" }
+
+### File Upload Remote Code Execution Lab
+<span class="chip">LAB</span>
+
+Practice a file-upload vulnerability path that leads to remote code execution.
+
+<div dir="rtl" lang="ar">
+تدرّب على مسار استغلال ثغرة رفع الملفات المؤدية إلى تنفيذ أوامر عن بُعد.
+</div>
+
+[View Resource](https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload){: target="_blank" rel="noopener noreferrer" }
 
 ---
 

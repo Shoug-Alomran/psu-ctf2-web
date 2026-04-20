@@ -1,4 +1,4 @@
-# Schedule / الجدول
+# Agenda / الأجندة
 
 Preparation sessions build up to the ACM CTF 2.0 main event. Workshop times will be updated later.
 
@@ -17,7 +17,7 @@ Preparation sessions build up to the ACM CTF 2.0 main event. Workshop times will
 Time TBD · Lab · Instructor: ACM & Cyber-Tech Team
 
 <div dir="rtl" lang="ar">
-الاستطلاع ووكلاء الويب<br>
+الاستطلاع ووسائط الويب<br>
 الوقت يحدد لاحقًا · المختبر · التقديم بواسطة فريق ACM وCyber-Tech
 </div>
 </div>
@@ -59,7 +59,7 @@ Time TBD · Lab · Instructor: ACM & Cyber-Tech Team
 Time TBD · Lab · Instructor: ACM & Cyber-Tech Team
 
 <div dir="rtl" lang="ar">
-المصادقة المكسورة<br>
+كسر الموثوقه<br>
 الوقت يحدد لاحقًا · المختبر · التقديم بواسطة فريق ACM وCyber-Tech
 </div>
 </div>
@@ -73,7 +73,7 @@ Time TBD · Lab · Instructor: ACM & Cyber-Tech Team
 Time TBD · Lab · Instructor: ACM & Cyber-Tech Team
 
 <div dir="rtl" lang="ar">
-استغلال الواجهات البرمجية وهجمات الملفات<br>
+استغلال واجهات البرمجة وهجمات الملفات<br>
 الوقت يحدد لاحقًا · المختبر · التقديم بواسطة فريق ACM وCyber-Tech
 </div>
 </div>

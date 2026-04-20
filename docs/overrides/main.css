@@ -487,6 +487,18 @@ html[data-theme="light"] .hero-title .accent.glitch {
   color: #000 !important;
 }
 
+.register-btn-disabled {
+  border-color: var(--border-bright);
+  color: var(--text-secondary) !important;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.register-btn-disabled:hover {
+  background: none;
+  color: var(--text-secondary) !important;
+}
+
 .section {
   padding: 3rem 2rem;
   max-width: 1200px;

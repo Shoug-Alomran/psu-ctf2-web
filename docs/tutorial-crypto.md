@@ -6,7 +6,7 @@
     </span>
     <h1 class="tutorial-title">
       <span class="locale-en">Injection Attacks</span>
-      <span class="locale-ar" lang="ar">هجمات الحقن</span>
+      <span class="locale-ar" lang="ar">هجمات الحقن(المهاجم يرسل بيانات خطيرة تخدع النظام)</span>
     </h1>
     <p class="tutorial-summary locale-en">Day 3 of the CTF Workshop 5-day program.</p>
     <p class="tutorial-summary locale-ar" lang="ar">اليوم الثالث من برنامج ورشة CTF المكوّن من خمسة أيام.</p>
@@ -16,19 +16,13 @@
         <strong class="locale-en">Theme:</strong>
         <strong class="locale-ar" lang="ar">المحور:</strong>
         <span class="locale-en">Exploiting vulnerable input handling</span>
-        <span class="locale-ar" lang="ar">استغلال معالجة الإدخال الضعيفة</span>
+        <span class="locale-ar" lang="ar">استغلال ضعف معالجة المدخلات</span>
       </div>
       <div class="tutorial-meta-item">
-        <strong class="locale-en">Date:</strong>
-        <strong class="locale-ar" lang="ar">التاريخ:</strong>
-        <span class="locale-en">Apr 21</span>
-        <span class="locale-ar" lang="ar">21 أبريل</span>
-      </div>
-      <div class="tutorial-meta-item">
-        <strong class="locale-en">Time:</strong>
-        <strong class="locale-ar" lang="ar">الوقت:</strong>
-        <span class="locale-en">TBD</span>
-        <span class="locale-ar" lang="ar">يحدد لاحقًا</span>
+        <strong class="locale-en">Author:</strong>
+        <strong class="locale-ar" lang="ar">إعداد:</strong>
+        <span class="locale-en">Shoug Alomran</span>
+        <span class="locale-ar" lang="ar">شوق العمران</span>
       </div>
     </div>
 
@@ -48,9 +42,9 @@
       <li class="locale-en">Command Injection</li>
       <li class="locale-en">SSTI</li>
       <li class="locale-ar" lang="ar">أساسيات الحقن</li>
-      <li class="locale-ar" lang="ar">حقن SQL</li>
+      <li class="locale-ar" lang="ar">حقن قواعد البيانات</li>
       <li class="locale-ar" lang="ar">حقن الأوامر</li>
-      <li class="locale-ar" lang="ar">حقن القوالب من جهة الخادم SSTI</li>
+      <li class="locale-ar" lang="ar">حقن قوالب جانب الخادم</li>
     </ul>
 
     <h2><span class="locale-en">Objectives</span><span class="locale-ar" lang="ar">الأهداف</span></h2>
@@ -58,24 +52,35 @@
       <li class="locale-en">Detect and exploit SQLi and command injection.</li>
       <li class="locale-en">Understand how input validation failures lead to compromise.</li>
       <li class="locale-en">Learn SSTI.</li>
-      <li class="locale-ar" lang="ar">اكتشاف واستغلال حقن SQL وحقن الأوامر.</li>
-      <li class="locale-ar" lang="ar">فهم كيف يؤدي فشل التحقق من المدخلات إلى الاختراق.</li>
-      <li class="locale-ar" lang="ar">التعرّف على SSTI.</li>
+      <li class="locale-ar" lang="ar">اكتشاف واستغلال ثغرات.</li>
+      <li class="locale-ar" lang="ar">فهم كيف تؤدي أخطاء التحقق من المدخلات إلى اختراق النظام.</li>
+      <li class="locale-ar" lang="ar">تعلم مفهوم</li>
     </ul>
 
     <h2><span class="locale-en">Workshop Activity</span><span class="locale-ar" lang="ar">نشاط الورشة</span></h2>
     <ul>
       <li class="locale-en">Exploit a SQL injection to extract data from a lab database.</li>
-      <li class="locale-ar" lang="ar">استغلال حقن SQL لاستخراج بيانات من قاعدة بيانات المختبر.</li>
+      <li class="locale-ar" lang="ar">استغلال ثغرة لاستخراج بيانات من قاعدة بيانات داخل المختبر.</li>
     </ul>
   </section>
 
   <section class="tutorial-open-card">
-    <p class="locale-en">If the embedded version does not load properly, open the HTML placeholder directly in a separate tab.</p>
-    <p class="locale-ar" lang="ar">إذا لم يتم تحميل النسخة المضمنة بشكل صحيح، يمكن فتح نموذج HTML مباشرة في علامة تبويب مستقلة.</p>
+    <h2><span class="locale-en">Recommended Tutorial</span><span class="locale-ar" lang="ar">الشرح المقترح</span></h2>
+    <p class="locale-en">Practice the login-bypass exercise to connect the workshop material with a real SQL injection lab.</p>
+    <p class="locale-ar" lang="ar">تدرّب على تمرين تجاوز تسجيل الدخول لربط محتوى الورشة بمختبر SQL Injection عملي.</p>
+    <a href="https://portswigger.net/web-security/sql-injection/lab-login-bypass" target="_blank" rel="noopener noreferrer">
+      <span class="locale-en">Open the SQL injection lab</span>
+      <span class="locale-ar" lang="ar">فتح مختبر SQL Injection</span>
+    </a>
+  </section>
+
+  <section class="tutorial-open-card">
+    <h2><span class="locale-en">Workshop HTML Content</span><span class="locale-ar" lang="ar">محتوى الورشة HTML</span></h2>
+    <p class="locale-en">Open the HTML workshop content or preview it below.</p>
+    <p class="locale-ar" lang="ar">يمكنك فتح محتوى الورشة بصيغة HTML أو معاينته بالأسفل.</p>
     <a href="../assets/tutorials/crypto.html" target="_blank" rel="noopener noreferrer">
-      <span class="locale-en">Open the Day 3 HTML placeholder in a new tab</span>
-      <span class="locale-ar" lang="ar">فتح نموذج HTML لليوم الثالث في تبويب جديد</span>
+      <span class="locale-en">Open the Day 3 HTML content</span>
+      <span class="locale-ar" lang="ar">فتح محتوى HTML لليوم الثالث</span>
     </a>
   </section>
 </div>
