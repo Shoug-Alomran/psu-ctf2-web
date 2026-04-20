@@ -5,14 +5,36 @@ interface Env {
 const RECIPIENT_EMAIL = "cybertech@psu.edu.sa";
 const SENDER_EMAIL = "ctf@shoug-tech.com";
 
+const ALLOWED_ORIGINS = new Set([
+  "https://psu-ctf.shoug-tech.com",
+  "http://localhost:8000",
+  "http://127.0.0.1:8000",
+]);
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
+    const origin = request.headers.get("Origin") || "";
+    const corsHeaders = buildCorsHeaders(origin);
+
+    if (request.method === "OPTIONS") {
+      return new Response(null, {
+        status: 204,
+        headers: corsHeaders,
+      });
+    }
+
     if (request.method === "GET") {
-      return new Response("CTF email worker is running");
+      return new Response("CTF email worker is running", {
+        headers: corsHeaders,
+      });
     }
 
     if (request.method !== "POST") {
-      return new Response("Method not allowed", { status: 405 });
+      return json({ success: false, error: "Method not allowed" }, 405, corsHeaders);
+    }
+
+    if (!ALLOWED_ORIGINS.has(origin)) {
+      return json({ success: false, error: "Origin not allowed" }, 403, corsHeaders);
     }
 
     try {
@@ -25,7 +47,7 @@ export default {
       const files = formData.getAll("attachments");
 
       if (!studentEmail || !topic || !subject || !solution) {
-        return json({ success: false, error: "Missing required fields" }, 400);
+        return json({ success: false, error: "Missing required fields" }, 400, corsHeaders);
       }
 
       const attachments: Array<{ filename: string; content: string }> = [];
@@ -71,31 +93,54 @@ export default {
             error: result?.message || "Email failed",
             resend: result,
           },
-          resendResponse.status
+          resendResponse.status,
+          corsHeaders
         );
       }
 
-      return json({
-        success: true,
-        message: "Email sent successfully",
-        resend: result,
-      });
+      return json(
+        {
+          success: true,
+          message: "Email sent successfully",
+          resend: result,
+        },
+        200,
+        corsHeaders
+      );
     } catch (error: any) {
       return json(
         {
           success: false,
           error: error?.message || "Internal error",
         },
-        500
+        500,
+        corsHeaders
       );
     }
   },
 };
 
-function json(data: unknown, status = 200): Response {
+function buildCorsHeaders(origin: string): Record<string, string> {
+  const headers: Record<string, string> = {
+    "Access-Control-Allow-Methods": "POST, OPTIONS, GET",
+    "Access-Control-Allow-Headers": "Content-Type",
+    Vary: "Origin",
+  };
+
+  if (ALLOWED_ORIGINS.has(origin)) {
+    headers["Access-Control-Allow-Origin"] = origin;
+  }
+
+  return headers;
+}
+
+function json(data: unknown, status = 200, extraHeaders: Record<string, string> = {}): Response {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      ...extraHeaders,
+    },
   });
 }
 
