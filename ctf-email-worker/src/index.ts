@@ -3,7 +3,7 @@ interface Env {
 }
 
 const RECIPIENT_EMAIL = "cybertech@psu.edu.sa";
-const SENDER_EMAIL = "ctf@shoug-tech.com";
+const SENDER_EMAIL = "shoug.alomran@shoug-tech.com";
 
 const ALLOWED_ORIGINS = new Set([
   "https://psu-ctf.shoug-tech.com",
