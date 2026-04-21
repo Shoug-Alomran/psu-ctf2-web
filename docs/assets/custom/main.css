@@ -1885,6 +1885,33 @@ html[data-theme="light"] .tutorial-submit-file-wrap {
   line-height: 1.5;
 }
 
+html[data-theme="light"] .team-member {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(228, 238, 249, 0.9));
+  border-color: rgba(26, 111, 216, 0.24);
+  box-shadow: 0 14px 34px rgba(28, 58, 92, 0.1);
+}
+
+html[data-theme="light"] .team-avatar {
+  background: #ffffff;
+  border-color: rgba(26, 111, 216, 0.55);
+  color: #122033;
+  box-shadow: 0 8px 20px rgba(26, 111, 216, 0.12);
+}
+
+html[data-theme="light"] .team-name {
+  color: #122033;
+}
+
+html[data-theme="light"] .team-tag {
+  background: rgba(26, 111, 216, 0.08);
+  border-color: rgba(26, 111, 216, 0.36);
+  color: #0d5fbd;
+}
+
+html[data-theme="light"] .team-role {
+  color: #526577;
+}
+
 footer,
 .site-footer {
   position: relative;
