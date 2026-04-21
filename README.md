@@ -15,11 +15,11 @@ acm-ctf2-web/
 │   ├── rules.md
 │   ├── faq.md
 │   ├── about.md
-│   ├── tutorial.md
-│   ├── tutorial-osint.md
-│   ├── tutorial-web.md
-│   ├── tutorial-crypto.md
-│   ├── tutorial-forensics.md
+│   ├── tutorial-recon-web-proxies.md
+│   ├── tutorial-access-control.md
+│   ├── tutorial-injection-attacks.md
+│   ├── tutorial-broken-authentication.md
+│   ├── tutorial-api-exploitation-file-attacks.md
 │   ├── assets/
 │   │   ├── custom/
 │   │   └── tutorials/

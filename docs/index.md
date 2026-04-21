@@ -143,7 +143,7 @@
           <div class="detail-group"><label data-en="TOPICS" data-ar="الموضوعات">TOPICS</label><span data-en="Recon, proxies, disclosure, discovery" data-ar="أساسيات الاستطلاع، وسائط الويب، كشف المعلومات، فحص واكتشاف مواقع الويب">Recon, proxies, disclosure, discovery</span></div>
           <div class="detail-group"><label data-en="LAB" data-ar="التطبيق">LAB</label><span data-en="Capture traffic and uncover hidden endpoints" data-ar="التقاط حركة البيانات عبر وسيط (Proxy) واكتشاف نقاط نهاية مخفية">Capture traffic and uncover hidden endpoints</span></div>
         </div>
-        <a class="view-btn" href="tutorial-osint/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
+        <a class="view-btn" href="tutorial-recon-web-proxies/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
       <div class="workshop-card">
         <div class="workshop-header">
@@ -157,7 +157,7 @@
           <div class="detail-group"><label data-en="TOPICS" data-ar="الموضوعات">TOPICS</label><span data-en="Sessions, access control, privilege bypasses" data-ar="إدارة الجلسات، التحكم في الوصول، تصعيد الصلاحيات / تجاوز القيود">Sessions, access control, privilege bypasses</span></div>
           <div class="detail-group"><label data-en="LAB" data-ar="التطبيق">LAB</label><span data-en="IDOR and parameter tampering challenge" data-ar="تنفيذ هجوم IDOR (الوصول المباشر غير الآمن إلى الكائنات) أو التلاعب بالمعاملات (Parameter Tampering) ضمن مختبر CTF (التقاط العلم)">IDOR and parameter tampering challenge</span></div>
         </div>
-        <a class="view-btn" href="tutorial-web/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
+        <a class="view-btn" href="tutorial-access-control/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
       <div class="workshop-card">
         <div class="workshop-header">
@@ -171,7 +171,7 @@
           <div class="detail-group"><label data-en="TOPICS" data-ar="الموضوعات">TOPICS</label><span data-en="SQLi, command injection, SSTI" data-ar="أساسيات هجمات الحقن، حقن قواعد البيانات، حقن الأوامر، حقن قوالب جانب الخادم">SQLi, command injection, SSTI</span></div>
           <div class="detail-group"><label data-en="LAB" data-ar="التطبيق">LAB</label><span data-en="Exploit SQLi to extract lab data" data-ar="استغلال ثغرة لاستخراج بيانات من قاعدة بيانات داخل المختبر">Exploit SQLi to extract lab data</span></div>
         </div>
-        <a class="view-btn" href="tutorial-crypto/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
+        <a class="view-btn" href="tutorial-injection-attacks/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
       <div class="workshop-card">
         <div class="workshop-header">
@@ -185,7 +185,7 @@
           <div class="detail-group"><label data-en="TOPICS" data-ar="الموضوعات">TOPICS</label><span data-en="Brute force, reset tokens, session handling" data-ar="هجمات التخمين القسري على أنظمة المصادقة، الهجمات على إدارة الجلسات غير الآمنة">Brute force, reset tokens, session handling</span></div>
           <div class="detail-group"><label data-en="LAB" data-ar="التطبيق">LAB</label><span data-en="Reset-token brute force and session proof" data-ar="تنفيذ هجوم تخمين قسري على صفحة إعادة تعيين كلمة المرور بدون حماية، وسرقة رمز الجلسة (Session Token) أو إظهار تنبيه (Alert) لإثبات نجاح الاستغلال">Reset-token brute force and session proof</span></div>
         </div>
-        <a class="view-btn" href="tutorial-forensics/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
+        <a class="view-btn" href="tutorial-broken-authentication/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
       <div class="workshop-card">
         <div class="workshop-header">
@@ -199,7 +199,7 @@
           <div class="detail-group"><label data-en="TOPICS" data-ar="الموضوعات">TOPICS</label><span data-en="API exploitation, file upload, LFI/RFI" data-ar="ثغرات رفع الملفات، استغلال واجهات البرمجة، تضمين الملفات">API exploitation, file upload, LFI/RFI</span></div>
           <div class="detail-group"><label data-en="LAB" data-ar="التطبيق">LAB</label><span data-en="API challenge and local-file read exploit" data-ar="العثور على ثغرة في API واستغلالها ضمن التحدي، وتنفيذ هجوم LFI لقراءة ملف محلي">API challenge and local-file read exploit</span></div>
         </div>
-        <a class="view-btn" href="tutorial/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
+        <a class="view-btn" href="tutorial-api-exploitation-file-attacks/" data-en="VIEW TUTORIAL ↗" data-ar="عرض الشرح ↗">VIEW TUTORIAL ↗</a>
       </div>
     </div>
   </div>
@@ -245,7 +245,7 @@
       <a class="platform-item" href="http://example.com" target="_blank" rel="noopener noreferrer"><div><div class="platform-name">Recon Demo Target</div><div class="platform-sub" data-en="Practice intercepting HTTP requests with a proxy" data-ar="التدرّب على اعتراض طلبات HTTP باستخدام Proxy">Practice intercepting HTTP requests with a proxy</div></div><span class="platform-arrow">→</span></a>
       <a class="platform-item" href="https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality" target="_blank" rel="noopener noreferrer"><div><div class="platform-name">Access Control Lab</div><div class="platform-sub" data-en="URL manipulation and admin-function bypass practice" data-ar="التدرّب على التلاعب بالرابط وتجاوز وظائف الإدارة">URL manipulation and admin-function bypass practice</div></div><span class="platform-arrow">→</span></a>
       <a class="platform-item" href="https://portswigger.net/web-security/sql-injection/lab-login-bypass" target="_blank" rel="noopener noreferrer"><div><div class="platform-name">SQL Injection Lab</div><div class="platform-sub" data-en="Login-bypass practice for the injection workshop" data-ar="التدرّب على تجاوز تسجيل الدخول في ورشة الحقن">Login-bypass practice for the injection workshop</div></div><span class="platform-arrow">→</span></a>
-      <a class="platform-item" href="https://portswigger.net/web-security/authentication" target="_blank" rel="noopener noreferrer"><div><div class="platform-name">Authentication Labs</div><div class="platform-sub" data-en="Broken authentication and session-handling practice" data-ar="التدرّب على ثغرات المصادقة وإدارة الجلسات">Broken authentication and session-handling practice</div></div><span class="platform-arrow">→</span></a>
+      <a class="platform-item" href="https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses" target="_blank" rel="noopener noreferrer"><div><div class="platform-name">Broken Authentication Lab</div><div class="platform-sub" data-en="Username enumeration via different login responses" data-ar="تعداد أسماء المستخدمين عبر اختلاف ردود تسجيل الدخول">Username enumeration via different login responses</div></div><span class="platform-arrow">→</span></a>
       <a class="platform-item" href="https://portswigger.net/web-security/file-upload/lab-file-upload-remote-code-execution-via-web-shell-upload" target="_blank" rel="noopener noreferrer"><div><div class="platform-name">File Upload Lab</div><div class="platform-sub" data-en="Remote code execution via insecure file upload" data-ar="تنفيذ أوامر عن بُعد عبر رفع ملفات غير آمن">Remote code execution via insecure file upload</div></div><span class="platform-arrow">→</span></a>
     </div>
   </div>

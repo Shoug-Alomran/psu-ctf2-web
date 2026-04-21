@@ -1033,6 +1033,11 @@
             transform: translateX(4px);
         }
 
+        .resource-item[href] {
+            color: inherit;
+            text-decoration: none;
+        }
+
         .resource-num {
             font-family: var(--head);
             font-weight: 800;
@@ -1111,6 +1116,31 @@
             font-size: 1rem;
             color: var(--text2);
             margin-bottom: 36px;
+        }
+
+        .demo-video-wrap {
+            margin-top: 28px;
+            border: 1px solid var(--border2);
+            border-radius: 20px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.24);
+        }
+
+        .demo-video-wrap video {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 72vh;
+            background: #050b14;
+        }
+
+        .demo-video-caption {
+            padding: 14px 18px;
+            font-size: 0.9rem;
+            color: var(--text2);
+            border-top: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.02);
+            text-align: left;
         }
 
         .prereq-grid {
@@ -1464,9 +1494,12 @@ Username: carlos   Password: qwerty / 123456 / password
 Access account dashboard
 → Expected: user is logged in as carlos</pre>
                 </div>
-                <div class="fallback-note">
-                    ⚠️ Fallback: Screenshot showing successful login with weak password; screenshot of repeated login
-                    attempts; pre‑recorded demo of login bypass.
+                <div class="demo-video-wrap">
+                    <video controls preload="metadata" poster="broken-authentication-demo-poster.svg">
+                        <source src="https://pub-1ae2691df7364eea93afb4e67996d97c.r2.dev/Broken%20Authentication%20Demo.mp4"
+                            type="video/mp4">
+                    </video>
+                    <div class="demo-video-caption">Follow along on your laptop. We will run through this together.</div>
                 </div>
             </div>
         </section>
@@ -1620,6 +1653,8 @@ Access account dashboard
                 <div class="challenge-task-label">THE TASK</div>
                 <div class="challenge-task">Use the provided lab to log in to an account by guessing weak or common
                     passwords.</div>
+                <a class="btn btn-primary" href="https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses"
+                    target="_blank" rel="noopener noreferrer" style="margin:24px 0; display:inline-flex;">Open PortSwigger Lab</a>
                 <div class="success-box">
                     <div class="success-label">SUCCESS CRITERION</div>
                     <div class="success-text">Screenshot showing successful login to the target account.</div>
@@ -1694,6 +1729,14 @@ Access account dashboard
             <div class="sec-label">SECTION 08 · FURTHER READING</div>
             <h2 class="sec-title">Go Deeper</h2>
             <div class="resource-list">
+                <a class="resource-item" href="https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="resource-num">LAB</div>
+                    <div class="resource-info">
+                        <h4>Username Enumeration via Different Responses</h4>
+                        <p>The exact PortSwigger lab used for the Broken Authentication workshop activity.</p>
+                    </div>
+                </a>
                 <div class="resource-item">
                     <div class="resource-num">01</div>
                     <div class="resource-info">
