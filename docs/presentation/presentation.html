@@ -1162,6 +1162,23 @@
                 transform: translateY(100vh) rotate(600deg) translateX(var(--dx));
             }
         }
+
+        @media (max-width: 900px) {
+            .s-close .bg-word {
+                font-size: clamp(140px, 42vw, 320px);
+                right: clamp(8px, 3vw, 20px);
+                bottom: 18px;
+                opacity: .9;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .s-close .bg-word {
+                font-size: clamp(104px, 34vw, 180px);
+                right: 10px;
+                bottom: 28px;
+            }
+        }
     </style>
 
 </head>
