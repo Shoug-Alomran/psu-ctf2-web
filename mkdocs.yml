@@ -27,7 +27,7 @@ nav:
   - Home: index.md
   - Agenda: agenda.md
   - Workshop: workshop.md
-  - Presentation: presentation/presentation.md
+  - Presentation: presentation/index.md
   - Resources: resources.md
   - Challenges: challenges.md
   - Rules: rules.md
