@@ -1249,6 +1249,16 @@ html[data-theme="light"] .club-work-card {
   border-radius: clamp(16px, 1.8vw, 20px);
 }
 
+.tutorial-open-card h1 {
+  margin: 0 0 clamp(0.85rem, 1.2vw, 1rem);
+  color: var(--text-primary);
+  font-family: "Courier New", monospace;
+  font-size: clamp(1.7rem, 1.35rem + 1.7vw, 2.9rem);
+  font-weight: 900;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
 .tutorial-open-card h2 {
   margin: 0 0 clamp(0.75rem, 1vw, 0.9rem);
   color: var(--text-primary);
@@ -1528,6 +1538,10 @@ html[lang="ar"] .tutorial-open-card {
   text-align: right;
 }
 
+html[lang="ar"] .tutorial-open-card {
+  padding-inline-end: clamp(7.5rem, 12vw, 10rem);
+}
+
 html[lang="ar"] .tutorial-summary {
   margin-right: 0;
   margin-left: auto;
@@ -1633,6 +1647,19 @@ html[data-theme="light"] .tutorial-grid-card,
 html[data-theme="light"] .tutorial-content-card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(244, 248, 255, 0.98));
   box-shadow: inset 0 0 0 1px rgba(26, 111, 216, 0.04), 0 10px 28px rgba(26, 111, 216, 0.08);
+}
+
+html[data-theme="light"] .tutorial-open-card h1,
+html[data-theme="light"] .tutorial-open-card h2 {
+  color: #15325d;
+}
+
+html[data-theme="light"] .tutorial-open-card p,
+html[data-theme="light"] .tutorial-content-card p,
+html[data-theme="light"] .tutorial-content-card li,
+html[data-theme="light"] .tutorial-content-card td,
+html[data-theme="light"] .tutorial-content-card th {
+  color: #4a6178;
 }
 
 html[data-theme="light"] .floating-control-btn {
@@ -1747,6 +1774,10 @@ html[data-theme="light"] .tutorial-submit-file-wrap {
 
   .tutorial-hero-card {
     padding: 1.35rem;
+  }
+
+  html[lang="ar"] .tutorial-open-card {
+    padding-inline-end: 1rem;
   }
 
   .tutorial-title {
