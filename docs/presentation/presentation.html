@@ -1178,6 +1178,181 @@
         }
 
         @media (max-width: 640px) {
+            .slide {
+                padding: 88px 20px 144px;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .slide-tag {
+                font-size: 10px;
+                margin-bottom: 8px;
+            }
+
+            .slide-heading {
+                font-size: clamp(34px, 13vw, 52px);
+                line-height: .94;
+            }
+
+            .divider {
+                margin: 12px 0 20px;
+            }
+
+            .nav {
+                bottom: 16px;
+                gap: 14px;
+                padding: 0 14px;
+            }
+
+            .nav-btn {
+                font-size: 11px;
+                padding: 10px 16px;
+                letter-spacing: .1em;
+            }
+
+            .nav-dots {
+                gap: 6px;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+
+            .stat-box {
+                padding: 16px 14px;
+            }
+
+            .stat-n {
+                font-size: clamp(34px, 14vw, 44px);
+            }
+
+            .stat-lbl {
+                font-size: 10px;
+                letter-spacing: .12em;
+            }
+
+            .stat-sub {
+                font-size: 12px;
+                line-height: 1.35;
+                overflow-wrap: anywhere;
+            }
+
+            .facts-row,
+            .ch-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .fact-block,
+            .ch-block {
+                padding: 18px 16px;
+            }
+
+            .fact-row,
+            .solve-row,
+            .diff-row {
+                font-size: 13px;
+            }
+
+            .fact-row {
+                gap: 10px;
+            }
+
+            .fact-val,
+            .solve-pct,
+            .cat-tag,
+            .diff-badge {
+                font-size: 12px;
+            }
+
+            .mini-bar-wrap {
+                margin: 0 8px;
+                min-width: 36px;
+            }
+
+            .leaderboard-slide {
+                padding-top: 88px;
+                padding-bottom: 144px;
+            }
+
+            .lb-list {
+                max-width: none;
+            }
+
+            .lb-row {
+                gap: 10px;
+                padding: 10px 12px;
+            }
+
+            .lb-bar-wrap {
+                display: none;
+            }
+
+            .lb-score {
+                width: auto;
+                min-width: 68px;
+                font-size: 11px;
+            }
+
+            .winners-slide {
+                padding: 88px 20px 144px;
+            }
+
+            .w-instruction {
+                margin-bottom: 16px;
+                font-size: 10px;
+                letter-spacing: .14em;
+            }
+
+            .podium {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 14px;
+                padding: 0;
+                margin-top: 0;
+            }
+
+            .podium::before {
+                display: none;
+            }
+
+            .w-card,
+            .w-card.p1 {
+                max-width: none;
+            }
+
+            .w-card.p1,
+            .w-card.p2,
+            .w-card.p3 {
+                order: initial;
+            }
+
+            .w-card.show.p1,
+            .w-card.show.p2,
+            .w-card.show.p3 {
+                transform: none;
+            }
+
+            .w-inner {
+                padding: 24px 18px 20px;
+            }
+
+            .w-name {
+                font-size: 30px;
+            }
+
+            .p1 .w-name {
+                font-size: 38px;
+            }
+
+            .w-members {
+                font-size: 13px;
+                line-height: 1.55;
+                overflow-wrap: anywhere;
+            }
+
             .s-close {
                 padding: 28px 24px 120px;
                 justify-content: flex-start;
